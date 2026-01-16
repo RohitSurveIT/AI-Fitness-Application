@@ -19,7 +19,7 @@ public class UserService {
         }
         User user=new User();
         user.setEmail(request.getEmail());
-        user.setPassword(request.getEmail());
+        user.setPassword(request.getPassword());
         user.setFirstName(request.getFirstName());
         user.setLastName(request.getLastName());
 
