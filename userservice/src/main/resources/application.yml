@@ -1,0 +1,15 @@
+
+spring:
+  application:
+    name: userservice
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fitness_user_db
+    username: postgres
+    password: 47839286 # Use quotes if your password has special characters
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true # Add this to see the "CREATE TABLE" command in your console
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
