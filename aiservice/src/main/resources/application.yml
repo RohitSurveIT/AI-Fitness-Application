@@ -35,6 +35,13 @@ rabbitmq:
     key: activity.tracking
 
 
+openai:
+      api:
+        url: ${OPENROUTER_API_URL}
+        key: ${OPENROUTER_API_KEY}
+
+
+
 
 
 
