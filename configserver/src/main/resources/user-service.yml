@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fitness_user_db
+    username: postgres
+    password: 47839286 # Use quotes if your password has special characters
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true # Add this to see the "CREATE TABLE" command in your console
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
